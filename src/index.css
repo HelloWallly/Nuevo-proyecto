@@ -1,0 +1,65 @@
+/* =============================================================== */
+/* index.css — Estilos globales de la app con Tailwind y personalizados */
+/* =============================================================== */
+
+/* 🟢 Tailwind CSS base, componentes y utilidades */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 Estilos base personalizados */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light; /* tema claro por defecto */
+  color: #1e293b; /* texto gris oscuro */
+  background: linear-gradient(to bottom right, #eef2ff, #e0e7ff); /* degradado principal */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ⚡ Body base */
+body {
+  margin: 0;
+  min-width: 320px;  /* evita que se rompa en pantallas muy pequeñas */
+  min-height: 100vh;
+  background: inherit; /* hereda el degradado de :root */
+}
+
+/* 🔗 Estilos para enlaces */
+a {
+  font-weight: 500;
+  color: #3b82f6; /* azul principal */
+  text-decoration: none;
+}
+a:hover {
+  color: #2563eb; /* azul más oscuro al pasar el mouse */
+}
+
+/* ⚡ Botones base (deshabilitado padding interno, se usa Tailwind en componentes) */
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;  <- eliminado para usar Tailwind
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+} */
+button:hover {
+  background-color: #2563eb; /* hover para todos los botones */
+}
+
+/* 🌓 Ajustes para tema claro explícito */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1e293b;
+    background: linear-gradient(to bottom right, #eef2ff, #e0e7ff);
+  }
+}

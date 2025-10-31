@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Sigma — Nexeus Project</title>
+
+    <!-- ✅ Fuente moderna -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Iconos de Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Configuración base de Tailwind (cargado por Vite automáticamente) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+      /* 🔹 Configuración personalizada del tema Tailwind */
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-dark": "#111418",
+              "background-card": "#1a2027",
+              "background-panel": "#283039",
+              accent: "#0bda5b",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ✅ Favicon (opcional, profesional) -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+
+  <body class="font-display bg-background-dark text-white min-h-screen">
+    <div id="root"></div>
+
+    <!-- ⚡ React App -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

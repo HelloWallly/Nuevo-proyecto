@@ -1,0 +1,48 @@
+===============================================================
+📌 Informe de Revisión - Proyecto Kanban Sigma
+===============================================================
+
+Autor: Jose Manuel Garcia Segura
+Fecha: 11/10/2025
+Estado: Firma completada ✅
+
+---------------------------------------------------------------
+Resumen Actualización Proyecto Kanban Sigma
+---------------------------------------------------------------
+
+Estado actual del proyecto: Base lista para trabajar frontend con Firebase
+
+Frontend preparado:
+- Pantallas Login y Register listas para implementar interfaz.
+- Tablero (Board/BoardView) aún no implementado, estructura preparada en src/components para añadirlo.
+- App.js gestiona el renderizado según estado de usuario (logueado/no logueado).
+- main.js es el punto de entrada de la app.
+
+Backend/DB con Firebase configurado:
+- Autenticación por usuario/contraseña habilitada.
+- Base de datos Firestore con colección “sigma” creada.
+- Archivo .env con todas las credenciales de Firebase:
+
+  VITE_FIREBASE_API_KEY=AIzaSyDuV1I0PisYcGTI-Y5c9mG1dM6lZ3V_npk
+  VITE_FIREBASE_AUTH_DOMAIN=kanban-nexeus-dc028.firebaseapp.com
+  VITE_FIREBASE_PROJECT_ID=kanban-nexeus-dc028
+  VITE_FIREBASE_STORAGE_BUCKET=kanban-nexeus-dc028.firebasestorage.app
+  VITE_FIREBASE_MESSAGING_SENDER_ID=820571207371
+  VITE_FIREBASE_APP_ID=1:820571207371:web:b4b3a9ca0a7ee02b2dcd4e
+  VITE_FIREBASE_MEASUREMENT_ID=G-BY83XJ15ZY
+
+Estructura del proyecto limpia y ordenada:
+- Todos los archivos y carpetas principales (src, public, index.html, package.json, vite.config.js) están en la raíz correcta.
+- Se eliminó la duplicación de src dentro de 202509-sigma.
+
+README actualizado:
+- Explica cómo instalar dependencias, configurar Firebase y ejecutar la app.
+- Contiene la estructura base del proyecto y roles de la primera semana.
+
+Objetivo ahora:
+- Los compañeros pueden empezar a trabajar en la interfaz de usuario de Login, Register y posteriormente Tablero.
+- La base de Firebase está lista para guardar y leer datos desde Firestore.
+
+===============================================================
+Fin del informe
+===============================================================
